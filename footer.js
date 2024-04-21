@@ -766,10 +766,15 @@ if(horizontal_size < 450){
 }
 
 
+(function() {
+    'use strict';
+
 
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
+
+
 
 
     if(page == "pricing"){
@@ -883,5 +888,4 @@ if(horizontal_size < 450){
 
     }
 
-
-
+})();
