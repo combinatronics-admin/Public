@@ -1,3 +1,12 @@
+ var path = window.location.pathname;
+    var page = path.split("/").pop();
+
+    if(page == "pricing"){
+        alert("test");
+    }
+
+
+
 var url = window.location.href;
 var home = url.endsWith("/");
 var pricing = url.endsWith("/pricing");
@@ -764,15 +773,4 @@ if(horizontal_size < 450){
    $('.social-proof').css("width","40%");
   
 }
-
-
-
-
-
-    var path = window.location.pathname;
-    var page = path.split("/").pop();
-
-    if(page == "pricing"){
-        alert("test");
-    }
 
