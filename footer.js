@@ -769,5 +769,10 @@ if(horizontal_size < 450){
 
 
 
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
 
+    if(page == "pricing"){
+        alert("test");
+    }
 
