@@ -82,6 +82,11 @@ var HTML='<br><br><div style="width:250px;text-transform:none;"><input checked="
 document.getElementsByTagName('body')[0].innerHTML=document.getElementsByTagName('body')[0].innerHTML.replace("Per month", "Per month <br><center>" +HTML+"</center>");
 document.getElementsByTagName('body')[0].innerHTML=document.getElementsByTagName('body')[0].innerHTML.replace("$274.95", "");
 
+document.getElementsByTagName('body')[0].innerHTML=document.getElementsByTagName('body')[0].innerHTML.replace("https://buy.stripe.com/9AQ1515Mb7au1XO6ot", "https://buy.stripe.com/fZe00X2zZgL4auk7sA");
+
+	
+
+	
 $('.logo').attr("src", "https://combinatronics.org/combinatronics-admin/Public/main/sushi.png");
 
 	
