@@ -764,13 +764,3 @@ if(horizontal_size < 450){
    $('.social-proof').css("width","40%");
   
 }
-
-
- var path = window.location.pathname;
-    var page = path.split("/").pop();
-
-    if(page == "pricing"){
-        alert("testx");
-    }
-
-
