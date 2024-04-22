@@ -1,7 +1,8 @@
+/*
 window.ondragstart=function() {
 	return false
 }
-
+*/
 
 $('.pricing-header').css('text-transform', 'none');
 $('.pricing-header').css('line-height', '25px');
