@@ -722,7 +722,7 @@ pay_monthly();
 
 
     //document.getElementsByClassName('icon-competitor')[2].innerHTML ="";
-    document.getElementsByClassName('buttons')[0].innerHTML ="";
+    //document.getElementsByClassName('buttons')[0].innerHTML ="";
     //document.getElementsByClassName('input-wrapper')[2].innerHTML ="";
     document.getElementsByClassName('start-using')[0].style ="width:100%;";
     document.getElementsByClassName('start-using')[1].style ="width:100%;";
@@ -772,3 +772,5 @@ if(horizontal_size < 450){
     if(page == "pricing"){
         alert("testx");
     }
+
+
