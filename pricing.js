@@ -114,7 +114,11 @@ document.getElementsByTagName('body')[0].innerHTML=document.getElementsByTagName
 
 $('.logo').attr("src", "https://combinatronics.org/combinatronics-admin/Public/main/sushi.png");
 
+	
+$(".button_stripe").parent().attr('href', 'https://buy.stripe.com/fZe00X2zZgL4auk7sA');
+$('.pricing-price').html('$20 <br> <span style="color:#000;text-transform:capitalize;">Per month <br></span>');
 
+	
 $('input').change(function() {
 		if(this.value=="year") {
 			$(".button_stripe").parent().attr('href', 'https://buy.stripe.com/fZe3d92zZ52m45WbIP');
