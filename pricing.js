@@ -2,7 +2,7 @@ var jQueryScript = document.createElement('script');
 jQueryScript.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
 document.head.appendChild(jQueryScript);
 
-jQuery(document).ready(function($){
+$(function() { 
 	
 window.ondragstart=function() {
 	return false
@@ -108,4 +108,5 @@ $('input').change(function() {
 
 
 $(".button_trial").text();
+
 });
