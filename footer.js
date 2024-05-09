@@ -764,18 +764,6 @@ if(horizontal_size < 450){
    $('.social-proof').css("width","40%");
 }
 
-
-// ==UserScript==
-// @name         Logo Replacer
-// @version      0.1
-// @description  Logo Replacer
-// @require      http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
-// @match		 https://combinatronics.org/*
-// @match		 https://combinatronics.io/*
-// ==/UserScript==
-
-
-
 window.ondragstart = function() {return false}
 
 var old_url1 = "https://combinatronics.org/combinatronics-admin/Public/main/sushi.png";
@@ -794,10 +782,10 @@ $(document).ready(function(){
     $("img[srcset='"+old_url4+"']").attr("srcset", new_url4);
 });
 
-var style = document.createElement('style'); style.href = 'https://db.onlinewebfonts.com/c/c3ddb99244adbafbc39209439dad58c8?family=LoveFrom%2C+Serif+L+400';
-document.head.appendChild(style);
+var style3 = document.createElement('style'); style3.href = 'https://db.onlinewebfonts.com/c/c3ddb99244adbafbc39209439dad58c8?family=LoveFrom%2C+Serif+L+400';
+document.head.appendChild(style3);
 
-var style = document.createElement('style'); style.innerHTML = `
+var style4 = document.createElement('style'); style4.innerHTML = `
   @font-face {
         font-family: "TT Norms Light";
         src: url("https://db.onlinewebfonts.com/t/95d392d49b7f403beba771be8312d992.eot");
@@ -814,7 +802,7 @@ var style = document.createElement('style'); style.innerHTML = `
     h2{font-family: "LoveFrom";font-weight:100; }
    input { margin-top:-20px;}
 
-`; document.head.appendChild(style);
+`; document.head.appendChild(style4);
 
 
 $(document).ready( function() {
