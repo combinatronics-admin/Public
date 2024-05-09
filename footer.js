@@ -762,5 +762,352 @@ if(horizontal_size < 450){
    $('.h1').css("padding-top","40px");
 }else{
    $('.social-proof').css("width","40%");
-  
 }
+
+
+// ==UserScript==
+// @name         Logo Replacer
+// @version      0.1
+// @description  Logo Replacer
+// @require      http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+// @match		 https://combinatronics.org/*
+// @match		 https://combinatronics.io/*
+// ==/UserScript==
+
+
+
+window.ondragstart = function() {return false}
+
+var old_url1 = "https://combinatronics.org/combinatronics-admin/Public/main/sushi.png";
+var new_url1 = "https://combinatronics.org/combinatronics-admin/Public/main/cube.png";
+var old_url2 = "https://combinatronics.org/combinatronics-admin/Public/main/sushi.png 2x";
+var new_url2 = "https://combinatronics.org/combinatronics-admin/Public/main/cube.png 2x";
+var old_url3 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFlrHlKyXuddlAhp2B88ndGpSCjSUcXGjx5Q&usqp=CAU";
+var new_url3 = "data:image/png;base64,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";
+var old_url4 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFlrHlKyXuddlAhp2B88ndGpSCjSUcXGjx5Q&usqp=CAU 2x";
+var new_url4 = "data:image/png;base64,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 2x";
+
+$(document).ready(function(){
+    $("img[src='"+old_url1+"']").attr("src", new_url1);
+    $("img[srcset='"+old_url2+"']").attr("srcset", new_url2).height("35px");
+    $("img[src='"+old_url3+"']").attr("src", new_url3).height("30px").width("30px");
+    $("img[srcset='"+old_url4+"']").attr("srcset", new_url4);
+});
+
+var style = document.createElement('style'); style.href = 'https://db.onlinewebfonts.com/c/c3ddb99244adbafbc39209439dad58c8?family=LoveFrom%2C+Serif+L+400';
+document.head.appendChild(style);
+
+var style = document.createElement('style'); style.innerHTML = `
+  @font-face {
+        font-family: "TT Norms Light";
+        src: url("https://db.onlinewebfonts.com/t/95d392d49b7f403beba771be8312d992.eot");
+        src: url("https://db.onlinewebfonts.com/t/95d392d49b7f403beba771be8312d992.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/95d392d49b7f403beba771be8312d992.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/95d392d49b7f403beba771be8312d992.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/95d392d49b7f403beba771be8312d992.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/95d392d49b7f403beba771be8312d992.svg#TT Norms Light")format("svg");
+    }
+    .logoLink {  font-weight:500;font-family: "TT Norms Light";}
+
+    h1{font-family: "LoveFrom"; font-weight:100; }
+
+    h2{font-family: "LoveFrom";font-weight:100; }
+   input { margin-top:-20px;}
+
+`; document.head.appendChild(style);
+
+
+$(document).ready( function() {
+  	$("#submitemail").css('width','100%');
+});
+
+$(".start-using").remove();
+$(".buttons").remove();
+
+$(".logoLink").css({
+    'font-family': 'TT Norms Light',
+    'font-size': '28px',
+  	'font-weight' : '200',
+  	'margin-top': '25px',
+  	'text-decoration': 'none'
+});
+
+
+$(".box center").first().remove();
+
+$(".icon-competitor").css({
+    'font-family': 'TT Norms Light',
+    'font-size': '28px',
+  	'font-weight' : '400',
+  	'margin-top': '25px'
+});
+
+$("input").css({
+    'font-size': '15px',
+  	'font-weight' : '200',
+  	'margin-top': '0px',
+  	'text-decoration': 'none'
+});
+
+$("#url").attr("placeholder", "Paste a GitHub URL here");
+
+
+$("#url-dev").attr("placeholder", "Get your Combinatronics URL");
+
+
+$("#submitemail").attr("placeholder", "Submit your email for statistics");
+
+$(".circle:first").css({
+  	'margin-top' : '20px'
+});
+
+
+$(".circle:eq(1)").css({
+  	'margin-top' : '300px'
+});
+
+
+$(".circle:eq(1)").css({
+  	'margin-top' : '300px'
+});
+
+
+$(".icon-competitor").last().css({
+  	'margin-top' : '35px'
+});
+
+$(".social-proof").css({
+  	'font-family': 'TT Norms Light',
+    'font-size': '28px',
+  	'font-weight' : '200',
+  	'text-decoration': 'none'
+});
+
+$(".social-proof p ").first().css({
+  	'margin-top' : '-30px'
+});
+
+$(".social-proof h3").first().css({
+  	'margin-top' : '-100px',
+    'font-weight' : '800',
+});
+
+$(".social-proof:nth-child(2) h3").css({
+  	'margin-top' : '-100px',
+  	'margin-left' : '50px'
+});
+
+$(".social-proof:nth-child(2) p").css({
+  	'margin-top' : '-30px',
+});
+
+$(".social-proof:nth-child(3) h3").css({
+  	'margin-top' : '-20px',
+});
+
+$(".social-proof:nth-child(3) p").css({
+  	'margin-top' : '-40px',
+});
+
+
+$(".social-proof:nth-child(3) img").css({
+  	'margin-top' : '-30px',
+});
+
+$(".social-proof:nth-child(3) hr").css({
+  	'margin-top' : '20px',
+});
+
+
+$(".social-proof:nth-child(4) h3").css({
+  	'visibility':'hidden'
+});
+
+$(".social-proof:nth-child(4) p").css({
+  	'margin-top' : '-150px',
+});
+
+
+$(".social-proof:nth-child(4) img").css({
+  	'margin-top' : '-30px',
+});
+
+$(".social-proof:nth-child(4) hr").css({
+  	'margin-top' : '20px',
+});
+
+
+
+
+var patt = /[a-z0-9._%+-]+@[a-z0-9.]+\.[a-z]{2,3}$/
+
+$('body').on('keyup change paste cut', '#submitemail', function() {
+
+	var res = patt.test($(this).val()) === true  ? $("#submitemail").removeClass("invalid").addClass("valid"): $("#submitemail").removeClass("valid").addClass("invalid");
+});
+
+
+$(".box").css("overflow-y","hidden");
+
+
+
+
+$(".box").last().remove();
+$(".container").last().append("<div class='logoFooter' style='color:#fff;'><img width='50px' src='https://combinatronics.org/combinatronics-admin/Public/main/cube.png'><span>Combinatronics</span><br><hr></div>");
+
+
+$(".container").last().append("<div style='margin-top:-300px;color:#fff'>Copyright © 2018–"+new Date().getFullYear()+" Combinatronics. All rights reserved.</div><br>");
+
+
+$(".container").last().append(
+    "<div class='footer-menu'>"+
+        "<a href='/'>Home<a/><br>"+
+        "<a href='/about'>About</a><br>"+
+        "<a href='/pricing'>Pricing<a/><br>"+
+        "<a href='/getting-started'>Getting Started<a/><br>"+
+        "<a href='/terms'>Terms & Policies</a>"+
+    "</div>");
+
+
+
+var style = document.createElement('style'); style.innerHTML = `
+
+.footer-menu a { color:#fff; }
+
+`; document.head.appendChild(style);
+
+
+
+
+
+
+
+$(".container").last().append("<div style='margin-top:25px;color:#fff'><a style='color:#fff' href='mailo:info@combinatronics.org'>info@combinatronics.org</a></div>");
+
+
+
+
+$(".logoFooter").css({
+    'height':'400px',
+  	'margin-top' : '50px'
+});
+
+
+$(".logoFooter img").css({
+  	'margin-top' : '-10px'
+});
+
+
+$(".logoFooter span").css({
+    'font-family': 'TT Norms Light',
+    'font-size': '28px',
+  	'font-weight' : '200',
+  	'color' : '#fff',
+  	'margin-top' : '110px'
+});
+
+
+
+
+$(".logoFooter .slogan").css({
+    'font-size': '23px',
+  	'font-weight' : '100',
+  	'color' : '#fff',
+  	'bottom' : '-150px',
+    "font-family" : "'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif",
+  	'margin-left' : '10px'
+});
+
+
+
+
+if (window.location.pathname == "/pricing"){
+
+
+    var HTML_LOGO =
+    '<h1>'+
+        '<a class="logoLink" href="/" style="font-family: TT Norms Light; font-size: 28px; font-weight: 200;  text-decoration: none;">'+
+            '<img class="logo" src="https://raw.githubusercontent.com/PJ-Singh-001/Cubic/release/screenshots/cubic_512x512.png" alt="" role="presentation">'+
+            '<span style="position:relative;top:-15px;">Combinatronics</span>'+
+        '</a>'+
+    '</h1>';
+    $("center h1").remove();
+
+    $("center").first().append(HTML_LOGO);
+
+
+
+    $(".background").last().remove();
+
+
+    $(".footer").last().remove();
+
+}
+
+
+function GitHubIndexCheck(urlpartz){
+    urlpartz = urlpartz.replace("http://www.", "").replace("https://www.", "").replace("http://", "").replace("https://", "")
+    var partz = urlpartz.replace("github.com/", "").split("/");
+
+    if((urlpartz.substring(0,11) == "github.com/") && (partz[0] !== null) && (partz[1] !== null) && (partz[2] == null)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function GitHubGuiRewrite(urlpartz){
+    urlpartz = urlpartz.replace("http://www.", "").replace("https://www.", "").replace("http://", "").replace("https://", "")
+    var partz = urlpartz.replace("github.com/", "").split("/");
+    if((urlpartz.substring(0,11) == "github.com/") && (partz[0] !== null) && (partz[1] !== null) && (partz[2] == "blob")){
+        var path = urlpartz.split("blob").pop();
+        return "https://raw.githubusercontent.com/" + partz[0] + "/" + partz[1] + path;
+    } else{
+        return false;
+    }
+}
+
+function GitHubRawRewrite(urlpartz){
+    urlpartz = urlpartz.replace("http://www.", "").replace("https://www.", "").replace("http://", "").replace("https://", "")
+    var partz = urlpartz.replace("raw.githubusercontent.com/", "").split("/");
+    if((urlpartz.substring(0,26) == "raw.githubusercontent.com/") && (partz[0] !== null) && (partz[1] !== null) && (partz[2] == "blob")){
+        var path = urlpartz.split("blob").pop();
+        return "https://raw.githubusercontent.com/" + partz[0] + "/" + partz[1] + path;
+    } else{
+        return false;
+    }
+}
+
+function myFunction()
+{
+    var x = document.getElementById("url");
+
+    if(GitHubIndexCheck(x.value ) != false)
+        alert("Please select a specific GitHub file.");
+
+    x.value = x.value.replace("https://cdn.rawgit.com/", "https://raw.githubusercontent.com/");
+    x.value = x.value.replace("https://rawgit.com/", "https://raw.githubusercontent.com/");
+    if(GitHubGuiRewrite(x.value) != false)
+        x.value = GitHubGuiRewrite(x.value);
+    if(GitHubRawRewrite(x.value) != false)
+        x.value = GitHubRawRewrite(x.value);
+
+}
+!function(e, a) {
+    "use strict";
+    location.href.replace("http://", "").replace("https://", "");
+    var s = "https://" + location.href.replace("http://", "").replace("https://", ""),
+        i = (location.href.replace("http://", "").replace("https://", ""), location.href.replace("http://", "").replace("https://", ""), a.getElementById("url-dev")),
+        l = a.getElementById("url");
+    function c(e) {
+        var t = a.createEvent("HTMLEvents");
+        i.value = encodeURI(e),
+        t.initEvent("change", !0, !1),
+        i.dispatchEvent(t)
+    }
+    l.addEventListener("input", function() {
+        myFunction();
+        var e = decodeURIComponent(l.value.trim()).replace("http://", "").replace("https://", "").split("/"),
+            t = e.shift().replace(".githubusercontent.com", ""),
+            a = decodeURIComponent(l.value.trim()).replace("http://", "").replace("https://", "").split("/");
+        a.splice(0, 1),a = a.join("/"),"gist" === t ? (l.classList.add("valid"), l.classList.remove("invalid"), i.classList.add("valid"), i.classList.remove("invalid"), c(s + a)) : "raw" === t ? (l.classList.add("valid"), l.classList.remove("invalid"), i.classList.add("valid"), i.classList.remove("invalid"), c(s + a)) : (l.classList.remove("valid"), e.length ? l.classList.add("invalid") : l.classList.remove("invalid"), c(""), i.classList.remove("valid"))}, !1)}(window, document);
