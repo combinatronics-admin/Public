@@ -735,9 +735,9 @@ pay_monthly();
     favoicon();
 }
 
-const style = document.createElement("style");
-style.textContent = ".title h1{ font-size: 30px;} .social-proof img{float:left;} .social-proof{ white-space: pre-wrap; margin-bottom:60px;} .box { overflow: auto; }";
-document.head.appendChild(style);  
+const style2 = document.createElement("style");
+style2.textContent = ".title h1{ font-size: 30px;} .social-proof img{float:left;} .social-proof{ white-space: pre-wrap; margin-bottom:60px;} .box { overflow: auto; }";
+document.head.appendChild(style2);  
 
   
 $('<div />', {
