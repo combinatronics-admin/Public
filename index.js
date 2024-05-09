@@ -1,5 +1,5 @@
 function GitHubIndexCheck(urlpartz){ 
-    urlpartz = urlpartz.replace("https://web.archive.org/web/20220818113303/http://www.", "").replace("https://web.archive.org/web/20220818113303/https://www.", "").replace("http://", "").replace("https://", "")
+    urlpartz = urlpartz.replace("http://www.", "").replace("https://www.", "").replace("http://", "").replace("https://", "")
     var partz = urlpartz.replace("github.com/", "").split("/");
 
     if((urlpartz.substring(0,11) == "github.com/") && (partz[0] !== null) && (partz[1] !== null) && (partz[2] == null)){
@@ -10,22 +10,22 @@ function GitHubIndexCheck(urlpartz){
 }
 
 function GitHubGuiRewrite(urlpartz){ 
-    urlpartz = urlpartz.replace("https://web.archive.org/web/20220818113303/http://www.", "").replace("https://web.archive.org/web/20220818113303/https://www.", "").replace("http://", "").replace("https://", "")
+    urlpartz = urlpartz.replace("http://www.", "").replace("https://www.", "").replace("http://", "").replace("https://", "")
     var partz = urlpartz.replace("github.com/", "").split("/");
     if((urlpartz.substring(0,11) == "github.com/") && (partz[0] !== null) && (partz[1] !== null) && (partz[2] == "blob")){
         var path = urlpartz.split("blob").pop();
-        return "https://web.archive.org/web/20220818113303/https://raw.githubusercontent.com/" + partz[0] + "/" + partz[1] + path;
+        return "https://raw.githubusercontent.com/" + partz[0] + "/" + partz[1] + path;
     } else{
         return false;
     }
 } 
 
 function GitHubRawRewrite(urlpartz){ 
-    urlpartz = urlpartz.replace("https://web.archive.org/web/20220818113303/http://www.", "").replace("https://web.archive.org/web/20220818113303/https://www.", "").replace("http://", "").replace("https://", "")
+    urlpartz = urlpartz.replace("http://www.", "").replace("https://www.", "").replace("http://", "").replace("https://", "")
     var partz = urlpartz.replace("raw.githubusercontent.com/", "").split("/");
     if((urlpartz.substring(0,26) == "raw.githubusercontent.com/") && (partz[0] !== null) && (partz[1] !== null) && (partz[2] == "blob")){
         var path = urlpartz.split("blob").pop();
-        return "https://web.archive.org/web/20220818113303/https://raw.githubusercontent.com/" + partz[0] + "/" + partz[1] + path;
+        return "https://raw.githubusercontent.com/" + partz[0] + "/" + partz[1] + path;
     } else{
         return false;
     }
@@ -38,8 +38,8 @@ function myFunction()
     if(GitHubIndexCheck(x.value ) != false)
         alert("Please select a specific GitHub file.");
 
-    x.value = x.value.replace("https://web.archive.org/web/20220818113303/https://cdn.rawgit.com/", "https://web.archive.org/web/20220818113303/https://raw.githubusercontent.com/");
-    x.value = x.value.replace("https://web.archive.org/web/20220818113303/https://rawgit.com/", "https://web.archive.org/web/20220818113303/https://raw.githubusercontent.com/");
+    x.value = x.value.replace("https://cdn.rawgit.com/", "https://raw.githubusercontent.com/");
+    x.value = x.value.replace("https://rawgit.com/", "https://raw.githubusercontent.com/");
     if(GitHubGuiRewrite(x.value) != false)
         x.value = GitHubGuiRewrite(x.value);
     if(GitHubRawRewrite(x.value) != false)
