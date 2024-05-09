@@ -1015,7 +1015,7 @@ if (window.location.pathname == "/pricing"){
     var HTML_LOGO =
     '<h1>'+
         '<a class="logoLink" href="/" style="font-family: TT Norms Light; font-size: 28px; font-weight: 200;  text-decoration: none;">'+
-            '<img class="logo" src="https://raw.githubusercontent.com/PJ-Singh-001/Cubic/release/screenshots/cubic_512x512.png" alt="" role="presentation">'+
+            '<img class="logo" src="https://combinatronics.org/combinatronics-admin/Public/main/cube.png" alt="" role="presentation">'+
             '<span style="position:relative;top:-15px;">Combinatronics</span>'+
         '</a>'+
     '</h1>';
