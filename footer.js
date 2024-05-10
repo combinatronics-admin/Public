@@ -1,5 +1,5 @@
 
-var scriptA = document.createElement('script'); scriptA.href = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
+var scriptA = document.createElement('script'); scriptA.href = 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
 document.head.appendChild(scriptA);
 
 
