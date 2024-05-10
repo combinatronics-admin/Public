@@ -3,6 +3,7 @@ var scriptA = document.createElement('script'); scriptA.href = 'http://ajax.goog
 document.head.appendChild(scriptA);
 
 
+
 var url = window.location.href;
 var home = url.endsWith("/");
 var pricing = url.endsWith("/pricing");
@@ -743,13 +744,12 @@ pay_monthly();
 const style = document.createElement("style");
 style.textContent = ".title h1{ font-size: 30px;} .social-proof img{float:left;} .social-proof{ white-space: pre-wrap; margin-bottom:60px;} .box { overflow: auto; }";
 document.head.appendChild(style);  
-
-var scriptB = document.createElement('script'); scriptB.href = 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
-document.head.appendChild(scriptB);
-  
+ 
+  /*
 $('<div />', {
   html: '<div class="social-proof"><img height="40px" src="https://opensearch.org/assets/media/partners/cern/cern_logo.png"><hr><br><h3>CERN</h3><p>Uses Combinatronics CDN to create an addictive incremental game that teaches players the history of high energy particle physics.</p></div>'
 }).insertAfter('.social-proof:last');
+*/
   
 var horizontal_size = $( window ).width();
 
