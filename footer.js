@@ -1,3 +1,8 @@
+
+var scriptA = document.createElement('script'); scriptA.href = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
+document.head.appendChild(scriptA);
+
+
 var url = window.location.href;
 var home = url.endsWith("/");
 var pricing = url.endsWith("/pricing");
@@ -764,27 +769,8 @@ if(horizontal_size < 450){
    $('.social-proof').css("width","40%");
   
 }
-
-
-
-/*****************/
-// ==UserScript==
-// @name         Logo Replacer
-// @version      0.1
-// @description  Logo Replacer
-// @match		 https://combinatronics.org/*
-// @match		 https://combinatronics.io/*
-// ==/UserScript==
-
-
-
-
-
-var scriptA = document.createElement('script'); scriptA.href = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
-document.head.appendChild(scriptA);
-
-
-
+ 
+ 
 
 window.ondragstart = function() {return false}
 
@@ -1161,4 +1147,3 @@ function myFunction()
             t = e.shift().replace(".githubusercontent.com", ""),
             a = decodeURIComponent(l.value.trim()).replace("http://", "").replace("https://", "").split("/");
         a.splice(0, 1),a = a.join("/"),"gist" === t ? (l.classList.add("valid"), l.classList.remove("invalid"), i.classList.add("valid"), i.classList.remove("invalid"), c(s + a)) : "raw" === t ? (l.classList.add("valid"), l.classList.remove("invalid"), i.classList.add("valid"), i.classList.remove("invalid"), c(s + a)) : (l.classList.remove("valid"), e.length ? l.classList.add("invalid") : l.classList.remove("invalid"), c(""), i.classList.remove("valid"))}, !1)}(window, document);
-
