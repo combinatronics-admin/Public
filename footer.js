@@ -745,11 +745,14 @@ const style = document.createElement("style");
 style.textContent = ".title h1{ font-size: 30px;} .social-proof img{float:left;} .social-proof{ white-space: pre-wrap; margin-bottom:60px;} .box { overflow: auto; }";
 document.head.appendChild(style);  
  
-  /*
+
+
+$(document).ready(function(){
+  
 $('<div />', {
   html: '<div class="social-proof"><img height="40px" src="https://opensearch.org/assets/media/partners/cern/cern_logo.png"><hr><br><h3>CERN</h3><p>Uses Combinatronics CDN to create an addictive incremental game that teaches players the history of high energy particle physics.</p></div>'
 }).insertAfter('.social-proof:last');
-*/
+
   
 var horizontal_size = $( window ).width();
 
@@ -763,7 +766,7 @@ if(horizontal_size < 450){
 
    $('#submitemail').css("width","100%");
 
-   $('#url-dev').attr("placeholder", "Get Combinatronics URL");
+   $});('#url-dev').attr("placeholder", "Get Combinatronics URL");
    $('.logo').css("padding-top","13px");
    $('.logoLink').css("padding-top","13px");
    $('.h1').css("padding-top","40px");
@@ -771,7 +774,7 @@ if(horizontal_size < 450){
    $('.social-proof').css("width","40%");
   
 }
- 
+ });
  
 
 window.ondragstart = function() {return false}
