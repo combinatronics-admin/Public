@@ -1048,27 +1048,13 @@ if (window.location.pathname == "/pricing"){
 
     //$("center").first().append(HTML_LOGO);
 
-}
+} 
+
+
+ 
 /*
 
 footers
-
-
-https://www.google.com/search?client=firefox-b-lm&sca_esv=abf976e12d8dcb8e&sca_upv=1&q=footer+design&uds=ADvngMh7w-lsc2TkqfGrpcdaN0tYbD3p-SHFOLmnrArKHE1lYNUo2c_Uk-vXKemtxVenig2mWF7yBCBnWqPgNstQmX2ceqztAqVKieDqxJOg2exX-7AAVUr_ig_kbUVz2_D0Tk6NeLhfDmbos-FUzo44q6bZRKNTuTQVyqoN93aWNFC6XCnhVqeBNHk_7shLlI2ct9Ck_F13c4XpmEIvCXZfXD-waSocS6Mv4rjgfe8RG4t8qyfw71UAuCj6fNtOHb6Ke9axPQMNM9dtekvwPtoFYgJYhxBChQcp3oovOcZCRY0kLXTPFoVJb7yOgJF-Kja1QhZ2gU_fiweuh9CjopAqEDFjC3r2iQ&udm=2&prmd=ivnmbtz&sa=X&ved=2ahUKEwixo-qNs4CGAxVH3skDHc9fAmsQtKgLegQIChAB#vhid=BxZxxZWU6qkI7M&vssid=mosaic
-
-https://i.pinimg.com/736x/1c/e3/dc/1ce3dc9938260cd96d5f8feb73aa3c2f.jpg
-
-https://dorik.com/blog/website-footer-examples
-
-https://dorik.com/blog/website-footer-examples
-
-
-
-
-
-
-
-/*
 
 $(".container").first().append('<div class="box" style="margin-top:50px"><h3>DNS updates required</h3><p>Non WWW (CNAME) URL for (<a href="#">yourdomain.com</a>)<br><a href="#">gh-project.combinatronics.org</a><br><br>WWW Redirect IP (A record) for www.youdomain.com<br>174.129.25.170</p></div>');
 
