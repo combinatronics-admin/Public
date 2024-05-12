@@ -775,28 +775,6 @@ if(horizontal_size < 450){
 }
 
 
- 
-
-/*******************/
-
-
-window.ondragstart = function() {return false}
-
-
-var old_url1 = "https://combinatronics.org/combinatronics-admin/Public/main/sushi.png";
-var new_url1 = "https://combinatronics.org/combinatronics-admin/Public/main/cube.png";
-var old_url2 = "https://combinatronics.org/combinatronics-admin/Public/main/sushi.png 2x";
-var new_url2 = "https://combinatronics.org/combinatronics-admin/Public/main/cube.png 2x";
-
-
-$(document).ready(function(){
-    $("img[src='"+old_url1+"']").attr("src", new_url1);
-    $("img[srcset='"+old_url2+"']").attr("srcset", new_url2).height("35px");
-});
-
-
-/*******************/
-
 function GitHubIndexCheck(urlpartz){
     urlpartz = urlpartz.replace("http://www.", "").replace("https://www.", "").replace("http://", "").replace("https://", "")
     var partz = urlpartz.replace("github.com/", "").split("/");
