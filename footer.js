@@ -775,6 +775,248 @@ if(horizontal_size < 450){
 }
 
 
+
+/***/
+
+ 
+
+
+
+$(".start-using").remove();
+$(".buttons").remove();
+
+$(".logoLink").css({
+    'font-family': 'TT Norms Light',
+    'font-size': '28px',
+  	'font-weight' : '200',
+  	'margin-top': '25px',
+  	'text-decoration': 'none'
+});
+
+
+$(".box center").first().remove();
+
+$(".icon-competitor").css({
+    'font-family': 'TT Norms Light',
+    'font-size': '28px',
+  	'font-weight' : '400',
+  	'margin-top': '25px'
+});
+
+$("input").css({
+    'font-size': '15px',
+  	'font-weight' : '200',
+  	'margin-top': '0px',
+  	'text-decoration': 'none'
+});
+
+$("#url").attr("placeholder", "Paste a GitHub URL here");
+
+
+$("#url-dev").attr("placeholder", "Get your Combinatronics URL");
+
+
+$("#submitemail").attr("placeholder", "Submit your email for statistics");
+
+$(".circle:first").css({
+  	'margin-top' : '20px'
+});
+
+
+$(".circle:eq(1)").css({
+  	'margin-top' : '300px'
+});
+
+
+$(".circle:eq(1)").css({
+  	'margin-top' : '300px'
+});
+
+
+$(".icon-competitor").last().css({
+  	'margin-top' : '35px'
+});
+
+$(".social-proof").css({
+  	'font-family': 'TT Norms Light',
+    'font-size': '28px',
+  	'font-weight' : '200',
+  	'text-decoration': 'none'
+});
+
+$(".social-proof p ").first().css({
+  	'margin-top' : '-30px'
+});
+
+$(".social-proof h3").first().css({
+  	'margin-top' : '-100px',
+    'font-weight' : '800',
+});
+
+$(".social-proof:nth-child(2) h3").css({
+  	'margin-top' : '-100px',
+  	'margin-left' : '50px'
+});
+
+$(".social-proof:nth-child(2) p").css({
+  	'margin-top' : '-30px',
+});
+
+$(".social-proof:nth-child(3) h3").css({
+  	'margin-top' : '-20px',
+});
+
+$(".social-proof:nth-child(3) p").css({
+  	'margin-top' : '-40px',
+});
+
+
+$(".social-proof:nth-child(3) img").css({
+  	'margin-top' : '-30px',
+});
+
+$(".social-proof:nth-child(3) hr").css({
+  	'margin-top' : '20px',
+});
+
+
+$(".social-proof:nth-child(4) h3").css({
+  	'visibility':'hidden'
+});
+
+$(".social-proof:nth-child(4) p").css({
+  	'margin-top' : '-150px',
+});
+
+
+$(".social-proof:nth-child(4) img").css({
+  	'margin-top' : '-30px',
+});
+
+$(".social-proof:nth-child(4) hr").css({
+  	'margin-top' : '20px',
+});
+
+
+
+
+var patt = /[a-z0-9._%+-]+@[a-z0-9.]+\.[a-z]{2,3}$/
+
+$('body').on('keyup change paste cut', '#submitemail', function() {
+
+	var res = patt.test($(this).val()) === true  ? $("#submitemail").removeClass("invalid").addClass("valid"): $("#submitemail").removeClass("valid").addClass("invalid");
+});
+
+
+$(".box").css("overflow-y","hidden");
+
+
+
+
+$(".box").last().remove();
+$(".container").last().append("<div class='logoFooter' style='color:#fff;'><img width='50px' src='https://combinatronics.org/combinatronics-admin/Public/main/cube.png'><span>Combinatronics</span><br><hr></div>");
+
+
+$(".container").last().append("<div style='margin-top:-300px;color:#fff'>Copyright © 2018–"+new Date().getFullYear()+" Combinatronics. All rights reserved.</div><br>");
+
+
+$(".container").last().append(
+    "<div class='footer-menu'>"+
+        "<a href='/'>Home<a/><br>"+
+        "<a href='/about'>About</a><br>"+
+        "<a href='/pricing'>Pricing<a/><br>"+
+        "<a href='/getting-started'>Getting Started<a/><br>"+
+        "<a href='/terms'>Terms & Policies</a>"+
+    "</div>");
+
+
+
+var styleC = document.createElement('style'); styleC.innerHTML = `
+
+.footer-menu a { color:#fff; }
+
+`; document.head.appendChild(styleC);
+
+
+
+
+
+
+
+$(".container").last().append("<div style='margin-top:25px;color:#fff'><a style='color:#fff' href='mailo:info@combinatronics.org'>info@combinatronics.org</a></div>");
+
+
+
+
+$(".logoFooter").css({
+    'height':'400px',
+  	'margin-top' : '50px'
+});
+
+
+$(".logoFooter img").css({
+  	'margin-top' : '-10px'
+});
+
+
+$(".logoFooter span").css({
+    'font-family': 'TT Norms Light',
+    'font-size': '28px',
+  	'font-weight' : '200',
+  	'color' : '#fff',
+  	'margin-top' : '110px'
+});
+
+
+
+
+$(".logoFooter .slogan").css({
+    'font-size': '23px',
+  	'font-weight' : '100',
+  	'color' : '#fff',
+  	'bottom' : '-150px',
+    "font-family" : "'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif",
+  	'margin-left' : '10px'
+});
+
+
+
+
+if (window.location.pathname == "/pricing"){
+
+
+    var HTML_LOGO =
+    '<h1>'+
+        '<a class="logoLink" href="/" style="font-family: TT Norms Light; font-size: 28px; font-weight: 200;  text-decoration: none;">'+
+            '<img class="logo" src="ttps://combinatronics.org/combinatronics-admin/Public/main/cube.png" alt="" role="presentation">'+
+            '<span style="position:relative;top:-15px;">Combinatronics</span>'+
+        '</a>'+
+    '</h1>';
+    $("center h1").remove();
+
+    $("center").first().append(HTML_LOGO);
+
+
+
+    $(".background").last().remove();
+
+
+    $(".footer").last().remove();
+
+
+/*
+    $("body").html().remove();
+
+        $(".socialproof-hero").css('background-color':'#000000');
+
+*/
+
+    //$("center").first().append(HTML_LOGO);
+
+}
+/***/
+
+
 /*******************/
 
 
