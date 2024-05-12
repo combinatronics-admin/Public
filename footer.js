@@ -787,10 +787,9 @@ var new_url2 = "https://combinatronics.org/combinatronics-admin/Public/main/cube
 
 $(document).ready(function(){
     $("img[src='"+old_url1+"']").attr("src", new_url1);
-    $("img[srcset='"+old_url2+"']").attr("srcset", new_url2).height("35px");
-    $("img[src='"+old_url3+"']").attr("src", new_url3).height("30px").width("30px");
-    $("img[srcset='"+old_url4+"']").attr("srcset", new_url4);
+    $("img[srcset='"+old_url2+"']").attr("srcset", new_url2).height("35px"); 
 });
+
 
 /*******************/
 
