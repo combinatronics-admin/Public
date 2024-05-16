@@ -2,7 +2,7 @@
     var page = path.split("/").pop();
 
     if(page == "pricing"){
-        //alert("test");
+        //alert("test2");
     }
 
 
