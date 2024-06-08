@@ -807,9 +807,13 @@ function GitHubRawRewrite(urlpartz){
         return false;
     }
 }
-
+function pushEventToUmami(eventName) {
+    umami(eventName);
+  }
 function myFunction()
-{
+{ 
+    
+    pushEventToUmami("click-form-url");
     var x = document.getElementById("url");
 
     if(GitHubIndexCheck(x.value ) != false)
