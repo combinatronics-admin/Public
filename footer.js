@@ -807,8 +807,21 @@ function GitHubRawRewrite(urlpartz){
         return false;
     }
 }
+ 
+function loadjs() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://cloud.umami.is/script.js";
+    script.setAttribute("data-website-id", "23ab90ea-fc2e-4834-9509-2815bc1dd454");
+    script.onload = function(){
+        //alert("Script is ready!");  
+    };
+    document.body.appendChild(script);
+ }
+loadjs();
+
 function pushEventToUmami(eventName) {
-    //umami(eventName);
+    umami(eventName);
   }
 function myFunction()
 { 
