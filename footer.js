@@ -808,7 +808,7 @@ function GitHubRawRewrite(urlpartz){
     }
 }
 function pushEventToUmami(eventName) {
-    umami(eventName);
+    //umami(eventName);
   }
 function myFunction()
 { 
