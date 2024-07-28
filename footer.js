@@ -858,3 +858,28 @@ function myFunction()
             t = e.shift().replace(".githubusercontent.com", ""),
             a = decodeURIComponent(l.value.trim()).replace("http://", "").replace("https://", "").split("/");
         a.splice(0, 1),a = a.join("/"),"gist" === t ? (l.classList.add("valid"), l.classList.remove("invalid"), i.classList.add("valid"), i.classList.remove("invalid"), c(s + a)) : "raw" === t ? (l.classList.add("valid"), l.classList.remove("invalid"), i.classList.add("valid"), i.classList.remove("invalid"), c(s + a)) : (l.classList.remove("valid"), e.length ? l.classList.add("invalid") : l.classList.remove("invalid"), c(""), i.classList.remove("valid"))}, !1)}(window, document);
+
+
+
+
+
+// Logo
+$(".logoLink").html('<img class="logo" src="https://combinatronics.org/combinatronics-admin/Public/main/logo.png" alt="" role="presentation">Combinatronics</a>');
+// Home icon
+$(".homehref").css("margin-top","0px");
+
+// Menu
+$("#menu").css("width",$(window).width()*2);
+$("#menu").css("height",$(window).height()*2);
+$("#menu").css("background-color","#F76539")
+
+
+// Home page
+if (document.location.pathname == "/") {
+  // Email form
+  $("#submitemail").css("width","100%");
+}else if (document.location.pathname == "/getting-started") {
+  //screenshots matching text
+	$(".box").find("img").eq(0).attr("src","https://combinatronics.org/combinatronics-admin/Public/main/screenshot-a-min.png");
+	$(".box").find("img").eq(1).attr("src","https://combinatronics.org/combinatronics-admin/Public/main/screenshot-b-min.png");
+}
