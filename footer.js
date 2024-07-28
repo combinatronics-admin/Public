@@ -861,7 +861,7 @@ function myFunction()
 
 
 
-
+/*
 
 // Logo
 $(".logoLink").html('<img class="logo" src="https://combinatronics.org/combinatronics-admin/Public/main/logo.png" alt="" role="presentation">Combinatronics</a>');
@@ -883,3 +883,6 @@ if (document.location.pathname == "/") {
 	$(".box").find("img").eq(0).attr("src","https://combinatronics.org/combinatronics-admin/Public/main/screenshot-a-min.png");
 	$(".box").find("img").eq(1).attr("src","https://combinatronics.org/combinatronics-admin/Public/main/screenshot-b-min.png");
 }
+
+
+*/
