@@ -729,7 +729,7 @@ pay_monthly();
 
 
 
-
+/*
     //document.getElementsByClassName('icon-competitor')[2].innerHTML ="";
     document.getElementsByClassName('buttons')[0].innerHTML ="";
     //document.getElementsByClassName('input-wrapper')[2].innerHTML ="";
@@ -740,7 +740,7 @@ pay_monthly();
     document.getElementsByClassName('home')[0].innerHTML = home_svg_link;
     document.getElementsByClassName('home')[0].style = "margin-left:28px;margin-top:28px;color:#acacac;"
 
-
+*/
     favoicon();
 }
 
