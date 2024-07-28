@@ -754,6 +754,7 @@ var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-3.7.1.min.js'; // Check https://jquery.com/ for the current version
 document.getElementsByTagName('head')[0].appendChild(script);
 
+window.onload = function() {
 
 
 $('<div />', {
@@ -889,4 +890,6 @@ if (document.location.pathname == "/") {
   //screenshots matching text
 	$(".box").find("img").eq(0).attr("src","https://combinatronics.org/combinatronics-admin/Public/main/screenshot-a-min.png");
 	$(".box").find("img").eq(1).attr("src","https://combinatronics.org/combinatronics-admin/Public/main/screenshot-b-min.png");
+}
+
 }
