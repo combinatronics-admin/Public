@@ -5,8 +5,6 @@
         //alert("test2");
     }
 
-
-
 var url = window.location.href;
 var home = url.endsWith("/");
 var pricing = url.endsWith("/pricing");
