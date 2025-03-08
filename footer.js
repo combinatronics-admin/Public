@@ -363,7 +363,7 @@ document.getElementsByClassName('box')[2].getElementsByTagName("center")[0].getE
         displayHeaderMenu();
         displayHome();
 
-var copyright_html = "Copyright © 2018–2024 Combinatronics. All rights reserved.";
+var copyright_html = "Copyright © 2025 Combinatronics. All rights reserved.";
 document.getElementsByClassName('box')[1].getElementsByTagName("center")[0].getElementsByTagName("p")[0].innerHTML = copyright_html;
 
 		var table = 
@@ -397,7 +397,7 @@ document.getElementsByClassName('box')[1].getElementsByTagName("center")[0].getE
         displayHeaderMenu();
         displayHome();
 
-var copyright_html = "Copyright © 2018–2024 Combinatronics. All rights reserved.";
+var copyright_html = "Copyright © 2025 Combinatronics. All rights reserved.";
 document.getElementsByClassName('box')[1].getElementsByTagName("center")[0].getElementsByTagName("p")[0].innerHTML = copyright_html;
 
     }
@@ -405,7 +405,7 @@ document.getElementsByClassName('box')[1].getElementsByTagName("center")[0].getE
         displayHeaderMenu();
         displayHome();
 
-var copyright_html = "Copyright © 2018–2024 Combinatronics. All rights reserved.";
+var copyright_html = "Copyright © 2025 Combinatronics. All rights reserved.";
 document.getElementsByClassName('box')[1].getElementsByTagName("center")[0].getElementsByTagName("p")[0].innerHTML = copyright_html;
     }
 
@@ -414,7 +414,7 @@ document.getElementsByClassName('box')[1].getElementsByTagName("center")[0].getE
 
     if(pricing == true){
 
-var copyright_html = "Copyright © 2018–2024 Combinatronics. All rights reserved.";
+var copyright_html = "Copyright © 2025 Combinatronics. All rights reserved.";
 document.getElementsByClassName('footer')[0].getElementsByTagName("div")[0].getElementsByTagName("center")[0].getElementsByTagName("p")[0].innerHTML = copyright_html;
 
 
