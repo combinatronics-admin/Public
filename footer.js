@@ -336,7 +336,7 @@ if(true == true){
     
 
 
-var copyright_html = "Copyright © 2018–2024 Combinatronics. All rights reserved.";
+var copyright_html = "Copyright © 2025 Combinatronics. All rights reserved.";
 document.getElementsByClassName('box')[2].getElementsByTagName("center")[0].getElementsByTagName("p")[0].innerHTML = copyright_html;
 
 
